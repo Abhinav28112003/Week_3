@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instagram-like Image Gallery</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #3ba9fc;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-gap: 20px;
+    }
+    .image {
+      width: 100%;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(203, 46, 46, 0.1);
+    }
+    .image img {
+      width: 100%;
+      height: auto;
+    }
+    .upload-button {
+      display: block;
+      margin: 20px auto;
+      padding: 10px 20px;
+      background-color: #55a4ed;
+      color: #0f1010;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+<div class = header>
+    <h1><center>INSTAGRAM</center></h1>
+</div>
+  <div class="container">
+    <div class="image">
+      <img src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_wide_w_960,q_50/esci/media/motion/2024/0321/dm_240321_gen_dhonichat2/dm_240321_gen_dhonichat2.jpg" alt="Image 1">
+    </div>
+    <div class="image">
+      <img src="https://c.ndtvimg.com/2022-11/jsjh3gbc_virat-kohli-ani-650_625x300_11_November_22.jpg?im=FaceCrop,algorithm=dnn,width=806,height=605" alt="Image 2">
+    </div>
+    <div class="image">
+      <img src="https://www.hindustantimes.com/ht-img/img/2023/11/12/550x309/India-Cricket-WCup-68_1699809986420_1699810043017.jpg">
+    </div>
+  </div>
+  <button class="upload-button">Upload Image</button>
+</body>
+</html>
